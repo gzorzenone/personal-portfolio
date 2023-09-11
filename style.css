@@ -18,24 +18,69 @@ h2 {
   font-family: "Playfair Display";
 }
 
-header img,
-.card img,
-footer img {
-  width: 24px;
+img {
+  width: 100%;
 }
 
-header img:first-of-type {
-  width: 240px;
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 16px 0 16px;
 }
 
-.card img:first-of-type {
-  width: 200px;
+header p,
+footer p {
+  text-align: justify;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  padding: 0 16px 0 16px;
+}
+
+.card {
+  padding: 8px;
+}
+
+.project-name-and-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 footer {
   background-color: aliceblue;
+  display: flex;
+  flex-direction: column;
+  padding: 0 16px 16px 16px;
 }
 
-footer img:last-of-type {
-  width: 280px;
+footer h2,
+footer .icon-links {
+  align-self: center;
+}
+
+footer p {
+  margin: 0;
+}
+
+footer .icon-links {
+  margin: 16px 0 16px 0;
+}
+
+.icon-links,
+.personal-info {
+  display: flex;
+  gap: 16px;
+}
+
+.icon-links img,
+.personal-info img {
+  width: 24px;
 }
